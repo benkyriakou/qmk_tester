@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT      qmk_tester
 
 /* key matrix size */
-#define MATRIX_ROWS 4
+#define MATRIX_ROWS 8
 #define MATRIX_COLS 3
 #define MATRIX_ROW_PINS { B1, B3, B2, B6 }
 #define MATRIX_COL_PINS { B5, B4, E6 }
@@ -66,3 +66,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NO_ACTION_LAYER
 #define NO_ACTION_TAPPING
 #define NO_ACTION_ONESHOT
+
+/* Split keyboard */
+#define MASTER_LEFT
+#define SOFT_SERIAL_PIN D3

@@ -29,3 +29,6 @@ DIP_SWITCH_ENABLE = yes
 
 # Improve compression during compilation
 EXTRAFLAGS += -flto
+
+# Split keyboard
+SPLIT_KEYBOARD = yes
