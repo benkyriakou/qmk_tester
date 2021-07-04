@@ -18,7 +18,7 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [0] = LAYOUT(
-        KC_MUTE,                            KC_G, \
+        KC_MUTE,                      KC_G, \
         KC_A, KC_B,      KC_C,        KC_R, KC_S, KC_T, \
         KC_D, RGB_VAD,   RGB_VAI,     KC_U, KC_V, KC_W, \
         KC_G, KC_BSPACE, KC_CAPSLOCK, KC_X, KC_Y, KC_Z
@@ -63,8 +63,8 @@ void dip_switch_update_user(uint8_t index, bool active) {
       active ? audio_on() : audio_off();
       break;
     case 1:
-      rgblight_sethsv(91, 255, 30);
-      rgblight_mode(RGBLIGHT_MODE_RAINBOW_MOOD);
+      rgblight_sethsv(HSV_PURPLE);
+      rgblight_mode(RGBLIGHT_MODE_SNAKE);
       active ? rgblight_enable() : rgblight_disable();
       break;
   }

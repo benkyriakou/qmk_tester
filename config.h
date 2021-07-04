@@ -30,7 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 3
 #define MATRIX_ROW_PINS { B1, B3, B2, B6 }
-#define MATRIX_COL_PINS { B5, B4, E6 }
+#define MATRIX_COL_PINS { F7, F6, F5 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
@@ -38,21 +38,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* ENCODER */
 #define DEBOUNCE 5
-#define ENCODERS_PAD_A { F6 }
-#define ENCODERS_PAD_B { F7 }
-#define ENCODER_RESOLUTION 4
+#define ENCODERS_PAD_A { D7 }
+#define ENCODERS_PAD_B { E6 }
+#define ENCODER_RESOLUTION 2
 
 /* LIGHTING */
-#define RGB_DI_PIN F5
-#define RGBLIGHT_EFFECT_RAINBOW_MOOD
-#define RGBLED_NUM 6
+#define RGB_DI_PIN B5
+#define RGBLIGHT_EFFECT_SNAKE
+#define RGBLED_NUM 9
 #define RGBLIGHT_DEFAULT_VAL 30
 
 /* STATUS */
-#define LED_CAPS_LOCK_PIN F4
+#define LED_CAPS_LOCK_PIN D2
 
 /* DIP */
-#define DIP_SWITCH_PINS { D7, D4 }
+#define DIP_SWITCH_PINS { D4, B4 }
 
 /* AUDIO */
 #define C6_AUDIO
