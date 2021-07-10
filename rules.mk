@@ -32,3 +32,6 @@ EXTRAFLAGS += -flto
 
 # Split keyboard
 SPLIT_KEYBOARD = yes
+
+# Bongocat
+WPM_ENABLE = yes

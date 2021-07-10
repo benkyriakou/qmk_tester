@@ -45,6 +45,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* LIGHTING */
 #define RGB_DI_PIN B5
 #define RGBLIGHT_EFFECT_SNAKE
+#define RGBLIGHT_EFFECT_RAINBOW_MOOD
 #define RGBLED_NUM 9
 #define RGBLIGHT_DEFAULT_VAL 30
 
