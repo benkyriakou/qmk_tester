@@ -44,3 +44,5 @@ Assembly is pretty straightforward - the components are through-hole and mostly 
 ## Schematic
 
 ![schematic](./screenshot/schematic.png)
+
+[High-res schematic](./screenshot/schematic-hi.png)
