@@ -1,19 +1,46 @@
 # qmk_tester
 
-![qmk_tester](imgur.com image replace me!)
+A board for testing out QMK features and prototyping keyboards. Currently supports:
 
-*A short description of the keyboard/project*
+- 3- and 5-pin MX-style switches
+- RGB backlighting
+- RGB underglow
+- Buzzer
+- DIP switch
+- Status LED
+- OLED screen
+- Split
 
-* Keyboard Maintainer: [benkyriakou](https://github.com/yourusername)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+## Bill of materials
 
-Make example for this keyboard (after setting up your build environment):
+### Basics
 
-    make qmk_tester:default
+- 1x pro-micro or compatible controller
+- 9x MX-style switch
+- 9x keycaps
+- 9x 1N4148 diodes
+- 1x LED
+- 1x rotary encoder
+- 1x 2-way DIP switch
+- 1x 6mm momentary switch
+- 1x PJ320A TRRS jack
+- 1x 100μF capacitor
+- 1x 100Ω resistor
+- 2x 4.7kΩ resistor
 
-Flashing example for this keyboard:
+### Lighting
 
-    make qmk_tester:default:flash
+- 9x 3535 WS2811 LED (per-key)
+- 6x 3535 WS2811 LED (underglow)
 
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+### OLED
+
+- 1x SSD1306 128x32 OLED
+
+## Assembly
+
+Assembly is pretty straightforward - the components are through-hole and mostly don't interfere with each other. First solder in the diodes as per the symbols on the PCB, then the per-key LEDs if required. After that, solder in the rest of the components as per the footprints on the board.
+
+## Schematic
+
+![schematic](./screenshot/schematic.png)
